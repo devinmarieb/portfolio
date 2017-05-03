@@ -1,0 +1,42 @@
+body {
+  background-color: #EBEBEB;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #23282D;
+  color: #EBEBEB;
+}
+
+.name {
+  display: inline-block;
+  margin: 15px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 36px;
+}
+
+.social {
+  display: inline-block;
+  margin: 15px;
+  width: 50px;
+}
+
+img {
+  cursor: pointer;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-card {
+  margin-top: 15px;
+  width: 45%;
+}
+
+.project-image {
+  margin-top: 5px;
+  height: 300px;
+}
