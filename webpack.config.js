@@ -21,7 +21,17 @@ module.exports = {
       { test: /\.scss$/, loader: 'style!css!sass' },
     ],
   },
+    devServer: {
+    contentBase: './build',
+    inline: true
+  },
   resolve: {
     extensions: ['', '.js', '.jsx', '.json', '.scss', '.css'],
   },
+  node: {
+    fs: "empty",
+    net: 'empty',
+    tls: 'empty',
+    dns: 'empty'
+  }
 };
