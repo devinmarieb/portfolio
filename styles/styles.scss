@@ -28,6 +28,7 @@ img {
 
 .project-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -39,4 +40,28 @@ img {
 .project-image {
   margin-top: 5px;
   height: 300px;
+}
+
+.technology-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skillset {
+  border-bottom: 1px solid black;
+}
+
+.skills-intro {
+  margin: 0 auto;
+  padding: 15px 0;
+  width: 85%;
+  text-align: center;
+}
+
+.favs {
+  font-size: 24px;
+}
+
+.other-tech {
+  font-size: 18px;
 }
