@@ -56,6 +56,7 @@ img {
   padding: 15px 0;
   width: 85%;
   text-align: center;
+  line-height: 150%;
 }
 
 .favs {
@@ -71,12 +72,17 @@ img {
 }
 
 .user-photo {
-  margin: 15px;
-  width: 250px;
+  float: right;
+  height: 530px;
+  margin-top: 10px;
   border-radius: 20px;
 }
 
 .about-me-text {
-  margin-top: 50px;
+  float: left;
+  margin-top: 10px;
   text-align: center;
+  width: 55%;
+  line-height: 150%;
+  font-size: 20px;
 }
