@@ -1,12 +1,12 @@
 body {
-  background-color: #EBEBEB;
+  background-color: #FAFAFA;
 }
 
 .title-container {
   display: flex;
   justify-content: space-between;
   background-color: #23282D;
-  color: #EBEBEB;
+  color: #FAFAFA;
 }
 
 .name {
@@ -47,42 +47,33 @@ img {
   justify-content: space-around;
 }
 
-.skillset {
-  border-bottom: 1px solid black;
-}
-
 .skills-intro {
   margin: 0 auto;
   padding: 15px 0;
   width: 85%;
   text-align: center;
   line-height: 150%;
-}
-
-.favs {
-  font-size: 24px;
-}
-
-.other-tech {
   font-size: 18px;
-}
-
-.user-photo-container {
-  text-align: center;
-}
-
-.user-photo {
-  float: right;
-  height: 530px;
-  margin-top: 10px;
-  border-radius: 20px;
 }
 
 .about-me-text {
   float: left;
-  margin-top: 10px;
+  margin-top: 25px;
+  margin-left: 30px;
   text-align: center;
   width: 55%;
   line-height: 150%;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.skillset {
+  float: right;
+  margin-right: 30px;
+  width: 30%;
+  text-align: center;
+  font-size: 18px;
+}
+
+h3 {
+  margin-top: 25px;
 }
