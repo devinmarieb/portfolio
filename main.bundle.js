@@ -8159,12 +8159,22 @@
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'https://www.linkedin.com/in/devin-beliveau-2126448', target: 'blank' },
-	              _react2.default.createElement('img', { className: 'social', src: '../../images/linkedin.png' })
+	              _react2.default.createElement('img', { className: 'social', src: './images/linkedin.png' })
 	            ),
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'https://github.com/devinmarieb', target: 'blank' },
-	              _react2.default.createElement('img', { className: 'social', src: '../../images/github.png' })
+	              _react2.default.createElement('img', { className: 'social', src: './images/github.png' })
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'mailto:devinmarieb@gmail.com' },
+	              _react2.default.createElement('img', { className: 'social', src: './images/email.png' })
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://medium.com/@devinmarieb', target: 'blank' },
+	              _react2.default.createElement('img', { className: 'social', src: './images/medium.png' })
 	            )
 	          )
 	        ),
@@ -8178,11 +8188,6 @@
 	              _Tabs.Tab,
 	              { label: 'projects' },
 	              _react2.default.createElement(_Projects2.default, null)
-	            ),
-	            _react2.default.createElement(
-	              _Tabs.Tab,
-	              { label: 'skills' },
-	              _react2.default.createElement(_Skills2.default, null)
 	            ),
 	            _react2.default.createElement(
 	              _Tabs.Tab,
@@ -41262,6 +41267,11 @@
 	        'section',
 	        { className: 'project-container' },
 	        _react2.default.createElement(
+	          'p',
+	          { className: 'skills-intro' },
+	          'Turing students invest over 1500 hours across seven months in becoming job-ready software developers. In the Front End Engineering program we begin by building skills in HTML, CSS, and design fundamentals. We continue by laying a solid foundation in core JavaScript, then progress into React and a small handful of libraries and frameworks. In the final quarter we build backend applications with Node and SQL. In total, front end engineering graduates have the skills to turn design comps into working applications.'
+	        ),
+	        _react2.default.createElement(
 	          _Card.Card,
 	          { className: 'project-card', style: { height: '900px' } },
 	          _react2.default.createElement(_Card.CardHeader, { title: 'Neumann', subtitle: 'React / Node.js / Router3 / Auth0 / Material-UI / Mocha Chai' }),
@@ -41279,8 +41289,8 @@
 	          _react2.default.createElement(
 	            _Card.CardMedia,
 	            null,
-	            _react2.default.createElement('img', { className: 'project-image', src: '../../images/neumann-home.png' }),
-	            _react2.default.createElement('img', { className: 'project-image', src: '../../images/neumann-companypage.png' })
+	            _react2.default.createElement('img', { className: 'project-image', src: './images/neumann-home.png' }),
+	            _react2.default.createElement('img', { className: 'project-image', src: './images/neumann-companypage.png' })
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -41301,8 +41311,8 @@
 	          _react2.default.createElement(
 	            _Card.CardMedia,
 	            null,
-	            _react2.default.createElement('img', { className: 'project-image', src: '../../images/nytbookshelf.png' }),
-	            _react2.default.createElement('img', { className: 'project-image', src: '../../images/nytfavorites.png' })
+	            _react2.default.createElement('img', { className: 'project-image', src: './images/nytbookshelf.png' }),
+	            _react2.default.createElement('img', { className: 'project-image', src: './images/nytfavorites.png' })
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -41323,8 +41333,8 @@
 	          _react2.default.createElement(
 	            _Card.CardMedia,
 	            null,
-	            _react2.default.createElement('img', { className: 'project-image', src: '../../images/byob.png' }),
-	            _react2.default.createElement('img', { className: 'project-image', src: '../../images/byobdata.png' })
+	            _react2.default.createElement('img', { className: 'project-image', src: './images/byob.png' }),
+	            _react2.default.createElement('img', { className: 'project-image', src: './images/byobdata.png' })
 	          )
 	        )
 	      );
@@ -44900,7 +44910,7 @@
 	          _react2.default.createElement(
 	            'p',
 	            { className: 'skills-intro' },
-	            'Turing students invest over 1500 hours across seven months in becoming job-ready software developers. In the Front-End Engineering program we begin by building skills in HTML, CSS, and Design Fundamentals. We continue by laying a solid foundation in core JavaScript, then progress into React. In the final quarter students build backend applications with Node and SQL. In total, FEE graduates have the skills to turn design comps into working applications.'
+	            'Turing students invest over 1500 hours across seven months in becoming job-ready software developers. In the Front End Engineering program we begin by building skills in HTML, CSS, and design fundamentals. We continue by laying a solid foundation in core JavaScript, then progress into React and a small handful of libraries and frameworks. In the final quarter we build backend applications with Node and SQL. In total, front end engineering graduates have the skills to turn design comps into working applications.'
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -45048,17 +45058,38 @@
 	        'section',
 	        null,
 	        _react2.default.createElement(
-	          'aside',
-	          { className: 'user-photo-container' },
-	          _react2.default.createElement('img', { className: 'user-photo', src: '../../images/user-photo.jpg' }),
-	          _react2.default.createElement('img', { className: 'user-photo', src: '../../images/user-photo.jpg' }),
-	          _react2.default.createElement('img', { className: 'user-photo', src: '../../images/user-photo.jpg' }),
-	          _react2.default.createElement('img', { className: 'user-photo', src: '../../images/user-photo.jpg' })
+	          'div',
+	          { className: 'about-me-text' },
+	          'I grew up in Portland, Maine, got my bachelor\'s degree from Champlain College in Burlington, Vermont and moved to Boston shortly after. I spent years in Boston working with technology and eventually decided I wanted to write software. I moved to Denver and enrolled in the Front End Engineering program at the Turing School of Software & Design. I want to continue writing JavaScript while learning new things, whether it be more front end frameworks and libraries or back end technologies.',
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
+	          'My personal interests include travel, photography, writing, knitting and good IPAs. I\'m very interested in the travel, education and advertising industries. While I was getting my bachelor\'s degree, I took a few advertising and marketing classes and I find the industry fascinating. Throughout my time in college and in Boston I had some amazing opportunities to travel and hope to continue to do so in the future. My dream job would be writing software for a company that deals with the travel or tourism industry.'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'about-me-text' },
-	          'Text'
+	          { className: 'skillset' },
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'Front End Skills:'
+	          ),
+	          'JavaScript, jQuery, React, Redux, Ember, CSS3, Sass, Material-UI, HTML5, Webpack',
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'Back End Skills:'
+	          ),
+	          'Node, Knex, PostgreSQL',
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'Testing Skills:'
+	          ),
+	          'Mocha, Chai, Enzyme, Selenium, Jasmine'
 	        )
 	      );
 	    }
@@ -45104,7 +45135,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: #EBEBEB; }\n\n.title-container {\n  display: flex;\n  justify-content: space-between;\n  background-color: #23282D;\n  color: #EBEBEB; }\n\n.name {\n  display: inline-block;\n  margin: 15px;\n  font-family: 'PT Sans Narrow', sans-serif;\n  font-size: 36px; }\n\n.social {\n  display: inline-block;\n  margin: 15px;\n  width: 50px; }\n\nimg {\n  cursor: pointer; }\n\n.project-container {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around; }\n\n.project-card {\n  margin-top: 15px;\n  width: 45%; }\n\n.project-image {\n  margin-top: 5px;\n  height: 300px; }\n\n.technology-container {\n  display: flex;\n  justify-content: space-around; }\n\n.skillset {\n  border-bottom: 1px solid black; }\n\n.skills-intro {\n  margin: 0 auto;\n  padding: 15px 0;\n  width: 85%;\n  text-align: center; }\n\n.favs {\n  font-size: 24px; }\n\n.other-tech {\n  font-size: 18px; }\n\n.user-photo-container {\n  text-align: center; }\n\n.user-photo {\n  margin: 15px;\n  width: 250px;\n  border-radius: 20px; }\n\n.about-me-text {\n  margin-top: 50px;\n  text-align: center; }\n", ""]);
+	exports.push([module.id, "body {\n  background-color: #FAFAFA; }\n\n.title-container {\n  display: flex;\n  justify-content: space-between;\n  background-color: #23282D;\n  color: #FAFAFA; }\n\n.name {\n  display: inline-block;\n  margin: 15px;\n  font-family: 'PT Sans Narrow', sans-serif;\n  font-size: 36px; }\n\n.social {\n  display: inline-block;\n  margin: 15px;\n  width: 50px; }\n\nimg {\n  cursor: pointer; }\n\n.project-container {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around; }\n\n.project-card {\n  margin-top: 15px;\n  width: 45%; }\n\n.project-image {\n  margin-top: 5px;\n  height: 300px; }\n\n.technology-container {\n  display: flex;\n  justify-content: space-around; }\n\n.skills-intro {\n  margin: 0 auto;\n  padding: 15px 0;\n  width: 85%;\n  text-align: center;\n  line-height: 150%;\n  font-size: 18px; }\n\n.about-me-text {\n  float: left;\n  margin-top: 25px;\n  margin-left: 30px;\n  text-align: center;\n  width: 55%;\n  line-height: 150%;\n  font-size: 18px; }\n\n.skillset {\n  float: right;\n  margin-right: 30px;\n  width: 30%;\n  text-align: center;\n  font-size: 18px; }\n\nh3 {\n  margin-top: 26px; }\n", ""]);
 
 	// exports
 
