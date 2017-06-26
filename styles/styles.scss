@@ -12,7 +12,8 @@ body {
 .name {
   display: inline-block;
   margin: 15px;
-  font-family: 'PT Sans Narrow', sans-serif;
+  // font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'News Cycle', sans-serif;
   font-size: 36px;
 }
 
@@ -29,18 +30,18 @@ img {
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .project {
-  margin-top: 25px;
+  margin: 10px;
   padding: 10px;
   text-align: center;
   -moz-box-shadow: 0 0 5px #0B132B;
   -webkit-box-shadow: 0 0 5px #0B132B;
   box-shadow: 0 0 5px #0B132B;
   border-radius: 2%;
-  width: 45vw;
+  width: 43vw;
 }
 
 .project-image {
@@ -64,7 +65,7 @@ img {
 
 .about-me-text {
   float: left;
-  margin: 15px auto;
+  margin: 0 auto 15px;
   width: 60%;
   border-right: 1px solid #0B132B;
   padding: 30px;
@@ -85,7 +86,7 @@ h3 {
   margin-top: 26px;
 }
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 920px) {
   .project-container {
     justify-content: center;
   }
@@ -94,7 +95,7 @@ h3 {
   }
 
   .about-me-text {
-    width: 95%;
+    width: 90%;
     border-right: none;
     border-bottom: 1px solid black;
   }
