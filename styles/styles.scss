@@ -43,8 +43,7 @@ img {
 
 .project-image {
   margin-top: 5px;
-  width: 550px;
-  height: 300px;
+  width: 95%;
 }
 
 .technology-container {
@@ -53,25 +52,23 @@ img {
 }
 
 .skills-intro {
-  margin: 0 auto;
+  margin: 15px auto;
   padding: 15px 0;
   width: 85%;
   text-align: center;
   line-height: 150%;
   font-size: 18px;
-  margin-bottom: 20px;
 }
 
 .about-me-text {
   float: left;
-  margin-top: 25px;
-  margin-left: 30px;
+  margin: 15px auto;
+  width: 60%;
+  border-right: 1px solid #0B132B;
+  padding: 30px;
   text-align: center;
-  width: 55%;
   line-height: 150%;
   font-size: 18px;
-  padding-right: 70px;
-  border-right: 1px solid #0B132B;
 }
 
 .skillset {
@@ -84,4 +81,48 @@ img {
 
 h3 {
   margin-top: 26px;
+}
+
+@media screen and (max-width: 915px) {
+  .project-container {
+    justify-content: center;
+  }
+  .project {
+    width: 80vw;
+  }
+
+  .about-me-text {
+    width: 95%;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+
+  .skillset {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skillset {
+    margin: 15px auto;
+    display: block;
+  }
+
+  .skill {
+    margin: 15px auto;
+  }
+
+  .title-container {
+    display: block;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .social {
+    width: 40px;
+  }
 }
