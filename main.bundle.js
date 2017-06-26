@@ -8146,7 +8146,7 @@
 	            _react2.default.createElement(
 	              'h1',
 	              { className: 'name' },
-	              'devin beliveau: front end developer'
+	              'devin beliveau: front-end developer'
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -8179,7 +8179,7 @@
 	          null,
 	          _react2.default.createElement(
 	            _Tabs.Tabs,
-	            { tabItemContainerStyle: { backgroundColor: '#0B132B' } },
+	            { tabItemContainerStyle: { backgroundColor: '#343D56' } },
 	            _react2.default.createElement(
 	              _Tabs.Tab,
 	              { label: 'projects', style: { color: '#FFFFFF' } },
@@ -41263,7 +41263,7 @@
 	        _react2.default.createElement(
 	          'p',
 	          { className: 'skills-intro' },
-	          'Turing students invest over 1500 hours across seven months in becoming job-ready software developers. In the Front End Engineering program we begin by building skills in HTML, CSS, and design fundamentals. We continue by laying a solid foundation in core JavaScript, then progress into React and a small handful of libraries and frameworks. In the final quarter we build backend applications with Node and SQL. In total, front end engineering graduates have the skills to turn design comps into working applications.'
+	          'Turing students invest over 1500 hours across seven months in becoming job-ready software developers. In the Front-End Engineering program we begin by building skills in HTML, CSS, and design fundamentals. We continue by laying a solid foundation in core JavaScript, then progress into React and a small handful of libraries and frameworks. In the final quarter we build backend applications with Node and SQL. In total, front-end engineering graduates have the skills to turn design comps into working applications.'
 	        ),
 	        _react2.default.createElement(
 	          'section',
@@ -41282,7 +41282,7 @@
 	            hosted: 'Deployed on Heroku',
 	            github: 'https://github.com/devinmarieb/NYTBookshelf',
 	            heroku: 'https://nytbookshelfprjct.herokuapp.com/#/',
-	            description: 'NYTBookshelf was a personal project I made about three quarters of the way through the front end engineering program at turing. It uses the NYT Bestseller list API to display seven categories for a user to browse. Books are displayed with the title, author, description and image if available. A user can save their favorite books and view them in a separate favorites tab as well as find the product to buy on Amazon.',
+	            description: 'NYTBookshelf was a personal project I made about three quarters of the way through the front-end engineering program at turing. It uses the NYT Bestseller list API to display seven categories for a user to browse. Books are displayed with the title, author, description and image if available. A user can save their favorite books and view them in a separate favorites tab as well as find the product to buy on Amazon.',
 	            imageOne: './images/nytbookshelf.png',
 	            imageTwo: './images/nytfavorites.png' }),
 	          _react2.default.createElement(_Projects2.default, { title: 'TripPlanner Database',
@@ -41290,7 +41290,7 @@
 	            hosted: 'Deployed on Heroku',
 	            github: 'https://github.com/devinmarieb/trip-planner',
 	            heroku: 'https://tripplannerprjct.herokuapp.com/',
-	            description: 'This was the first solo CRUD database I\'ve made. The idea behind this project was to make a simple database with dummy data that can be utilized in a future project. There are eighteen endpoints that cover GET, POST, PATCH and DELETE requests. Most importantly, this project taught me how to extensively test a database for both happy and sad paths. I made a quick front end for this project just so it was more pleasing to look at as a deployed app.',
+	            description: 'This was the first solo CRUD database I\'ve made. The idea behind this project was to make a simple database with dummy data that can be utilized in a future project. There are eighteen endpoints that cover GET, POST, PATCH and DELETE requests. Most importantly, this project taught me how to extensively test a database for both happy and sad paths. I made a quick front-end for this project just so it was more pleasing to look at as a deployed app.',
 	            imageOne: './images/byob.png',
 	            imageTwo: './images/byobdata.png' }),
 	          _react2.default.createElement(_Projects2.default, { title: 'Codewars',
@@ -44959,7 +44959,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'about-me-text' },
-	          'I grew up in Portland, Maine, got my bachelor\'s degree from Champlain College in Burlington, Vermont and moved to Boston shortly after. I spent years in Boston working with technology and eventually decided I wanted to write software. I moved to Denver and enrolled in the Front End Engineering program at the Turing School of Software & Design. I want to continue writing JavaScript while learning new things, whether it be more front end frameworks and libraries or back end technologies.',
+	          'I grew up in Portland, Maine, got my bachelor\'s degree from Champlain College in Burlington, Vermont and moved to Boston shortly after. I spent years in Boston working with technology and eventually decided I wanted to write software. I moved to Denver and enrolled in the Front-End Engineering program at the Turing School of Software & Design. I want to continue writing JavaScript while learning new things, whether it be more front-end frameworks and libraries or back end technologies.',
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement('br', null),
 	          'My personal interests include travel, photography, writing, knitting and good IPAs. I\'m very interested in the travel, education and advertising industries. While I was getting my bachelor\'s degree, I took a few advertising and marketing classes and I find the industry fascinating. Throughout my time in college and in Boston I had some amazing opportunities to travel and hope to continue to do so in the future. My dream job would be writing software for a company that deals with the travel or tourism industry.'
@@ -44973,7 +44973,7 @@
 	            _react2.default.createElement(
 	              'h3',
 	              null,
-	              'Front End Skills:'
+	              'Front-End Skills:'
 	            ),
 	            'JavaScript, jQuery, React, Redux, Ember, CSS3, Sass, Material-UI, HTML5, Webpack',
 	            _react2.default.createElement('br', null),
@@ -45046,7 +45046,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: #FFFFFF; }\n\n.title-container {\n  display: flex;\n  justify-content: space-between;\n  background-color: #0B132B;\n  color: #FFFFFF; }\n\n.name {\n  display: inline-block;\n  margin: 15px;\n  font-family: 'PT Sans Narrow', sans-serif;\n  font-size: 36px; }\n\n.social {\n  display: inline-block;\n  margin: 15px;\n  width: 50px; }\n\nimg {\n  cursor: pointer; }\n\n.project-container {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between; }\n\n.project {\n  margin-top: 25px;\n  padding: 10px;\n  text-align: center;\n  -moz-box-shadow: 0 0 5px #0B132B;\n  -webkit-box-shadow: 0 0 5px #0B132B;\n  box-shadow: 0 0 5px #0B132B;\n  border-radius: 2%;\n  width: 45vw; }\n\n.project-image {\n  margin-top: 5px;\n  width: 95%; }\n\n.technology-container {\n  display: flex;\n  justify-content: space-around; }\n\n.skills-intro {\n  margin: 15px auto;\n  padding: 15px 0;\n  width: 85%;\n  text-align: center;\n  line-height: 150%;\n  font-size: 18px; }\n\n.about-me-text {\n  float: left;\n  margin: 15px auto;\n  width: 60%;\n  border-right: 1px solid #0B132B;\n  padding: 30px;\n  text-align: center;\n  line-height: 150%;\n  font-size: 18px; }\n\n.skillset {\n  float: right;\n  margin-right: 30px;\n  width: 30%;\n  text-align: center;\n  font-size: 18px; }\n\nh3 {\n  margin-top: 26px; }\n\n@media screen and (max-width: 915px) {\n  .project-container {\n    justify-content: center; }\n  .project {\n    width: 80vw; }\n  .about-me-text {\n    width: 95%;\n    border-right: none;\n    border-bottom: 1px solid black; }\n  .skillset {\n    width: 95%;\n    margin-bottom: 30px; } }\n\n@media screen and (max-width: 600px) {\n  .skillset {\n    margin: 15px auto;\n    display: block; }\n  .skill {\n    margin: 15px auto; }\n  .title-container {\n    display: block;\n    text-align: center; }\n  .name {\n    font-size: 22px; }\n  .social {\n    width: 40px; } }\n", ""]);
+	exports.push([module.id, "body {\n  background-color: #FFFFFF; }\n\n.title-container {\n  display: flex;\n  justify-content: space-between;\n  background-color: #0B132B;\n  color: #FFFFFF; }\n\n.name {\n  display: inline-block;\n  margin: 15px;\n  font-family: 'PT Sans Narrow', sans-serif;\n  font-size: 36px; }\n\n.social {\n  display: inline-block;\n  margin: 15px;\n  width: 50px; }\n\nimg {\n  cursor: pointer; }\n\n.project-container {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between; }\n\n.project {\n  margin: 15px;\n  padding: 10px;\n  text-align: center;\n  -moz-box-shadow: 0 0 5px #0B132B;\n  -webkit-box-shadow: 0 0 5px #0B132B;\n  box-shadow: 0 0 5px #0B132B;\n  border-radius: 2%;\n  width: 45vw; }\n\n.project-image {\n  margin-top: 5px;\n  width: 95%; }\n\n.technology-container {\n  display: flex;\n  justify-content: space-around; }\n\n.skills-intro {\n  margin: 15px auto;\n  padding: 15px 0;\n  width: 85%;\n  text-align: center;\n  line-height: 150%;\n  font-size: 18px; }\n\n.about-me-text {\n  float: left;\n  margin: 15px auto;\n  width: 60%;\n  border-right: 1px solid #0B132B;\n  padding: 30px;\n  text-align: center;\n  line-height: 150%;\n  font-size: 18px; }\n\n.skillset {\n  float: right;\n  margin-right: 30px;\n  width: 30%;\n  text-align: center;\n  font-size: 18px; }\n\nh3 {\n  margin-top: 26px; }\n\n@media screen and (max-width: 915px) {\n  .project-container {\n    justify-content: center; }\n  .project {\n    width: 80vw; }\n  .about-me-text {\n    width: 95%;\n    border-right: none;\n    border-bottom: 1px solid black; }\n  .skillset {\n    width: 95%;\n    margin-bottom: 30px; } }\n\n@media screen and (max-width: 600px) {\n  .skillset {\n    margin: 15px auto;\n    display: block; }\n  .skill {\n    margin: 15px auto; }\n  .title-container {\n    display: block;\n    text-align: center; }\n  .name {\n    font-size: 22px; }\n  .social {\n    width: 40px; } }\n", ""]);
 
 	// exports
 
