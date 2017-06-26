@@ -8183,7 +8183,7 @@
 	          null,
 	          _react2.default.createElement(
 	            _Tabs.Tabs,
-	            { tabItemContainerStyle: { backgroundColor: '#23282D' } },
+	            { tabItemContainerStyle: { backgroundColor: '#7FD1B9' } },
 	            _react2.default.createElement(
 	              _Tabs.Tab,
 	              { label: 'projects' },
