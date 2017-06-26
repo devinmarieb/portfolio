@@ -29,14 +29,16 @@ img {
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  width: 45vw;
+  justify-content: space-between;
 }
 
 .project {
+  margin-top: 20px;
   padding: 10px;
   text-align: center;
   border: 3px solid #0B132B;
   border-radius: 2%;
+  width: 45vw;
 }
 
 .project-image {
@@ -57,7 +59,6 @@ img {
   text-align: center;
   line-height: 150%;
   font-size: 18px;
-  border-bottom: 1px solid #0B132B;
   margin-bottom: 20px;
 }
 
