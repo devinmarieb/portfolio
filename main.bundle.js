@@ -8099,13 +8099,9 @@
 
 	var _Tabs = __webpack_require__(500);
 
-	var _Projects = __webpack_require__(664);
+	var _ProjectCards = __webpack_require__(664);
 
-	var _Projects2 = _interopRequireDefault(_Projects);
-
-	var _Skills = __webpack_require__(699);
-
-	var _Skills2 = _interopRequireDefault(_Skills);
+	var _ProjectCards2 = _interopRequireDefault(_ProjectCards);
 
 	var _AboutMe = __webpack_require__(700);
 
@@ -8155,16 +8151,26 @@
 	          ),
 	          _react2.default.createElement(
 	            'aside',
-	            null,
+	            { className: 'social-container' },
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'https://www.linkedin.com/in/devin-beliveau-2126448', target: 'blank' },
-	              _react2.default.createElement('img', { className: 'social', src: '../../images/linkedin.png' })
+	              _react2.default.createElement('img', { className: 'social', src: './images/linkedin.png' })
 	            ),
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'https://github.com/devinmarieb', target: 'blank' },
-	              _react2.default.createElement('img', { className: 'social', src: '../../images/github.png' })
+	              _react2.default.createElement('img', { className: 'social', src: './images/github.png' })
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'mailto:devinmarieb@gmail.com' },
+	              _react2.default.createElement('img', { className: 'social', src: './images/email.png' })
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://medium.com/@devinmarieb', target: 'blank' },
+	              _react2.default.createElement('img', { className: 'social', src: './images/medium.png' })
 	            )
 	          )
 	        ),
@@ -8173,20 +8179,15 @@
 	          null,
 	          _react2.default.createElement(
 	            _Tabs.Tabs,
-	            { tabItemContainerStyle: { backgroundColor: '#23282D' } },
+	            { tabItemContainerStyle: { backgroundColor: '#0B132B' } },
 	            _react2.default.createElement(
 	              _Tabs.Tab,
-	              { label: 'projects' },
-	              _react2.default.createElement(_Projects2.default, null)
+	              { label: 'projects', style: { color: '#FFFFFF' } },
+	              _react2.default.createElement(_ProjectCards2.default, null)
 	            ),
 	            _react2.default.createElement(
 	              _Tabs.Tab,
-	              { label: 'skills' },
-	              _react2.default.createElement(_Skills2.default, null)
-	            ),
-	            _react2.default.createElement(
-	              _Tabs.Tab,
-	              { label: 'about' },
+	              { label: 'about', style: { color: '#FFFFFF' } },
 	              _react2.default.createElement(_AboutMe2.default, null)
 	            )
 	          )
@@ -41229,9 +41230,95 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Card = __webpack_require__(665);
+	var _Projects = __webpack_require__(665);
 
-	var _FlatButton = __webpack_require__(696);
+	var _Projects2 = _interopRequireDefault(_Projects);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ProjectsCards = function (_Component) {
+	  _inherits(ProjectsCards, _Component);
+
+	  function ProjectsCards() {
+	    _classCallCheck(this, ProjectsCards);
+
+	    var _this = _possibleConstructorReturn(this, (ProjectsCards.__proto__ || Object.getPrototypeOf(ProjectsCards)).call(this));
+
+	    _this.state = {};
+	    return _this;
+	  }
+
+	  _createClass(ProjectsCards, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'section',
+	        null,
+	        _react2.default.createElement(
+	          'p',
+	          { className: 'skills-intro' },
+	          'Turing students invest over 1500 hours across seven months in becoming job-ready software developers. In the Front End Engineering program we begin by building skills in HTML, CSS, and design fundamentals. We continue by laying a solid foundation in core JavaScript, then progress into React and a small handful of libraries and frameworks. In the final quarter we build backend applications with Node and SQL. In total, front end engineering graduates have the skills to turn design comps into working applications.'
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'project-container' },
+	          _react2.default.createElement(_Projects2.default, {
+	            title: 'Neumann',
+	            subtitle: 'React / Node.js / Router3 / Auth0 / Material-UI / Mocha Chai',
+	            github: 'https://github.com/ejwill04/neumann',
+	            heroku: 'https://neumann.herokuapp.com/',
+	            description: 'Neumann is an app designed to help students at Turing find companies that alumni work at. An alumni can add a company to the app or add themselves to an existing company. They can also add reviews or hiring process information about the companies they\'ve been associated with. As Turing grows, it\'s important for students to be able to connect with alumni. Alumni can choose to give out their slack handle or email if they\'re willing to have students contact them.',
+	            imageOne: './images/neumann-home.png',
+	            imageTwo: './images/neumann-companypage.png' }),
+	          _react2.default.createElement(_Projects2.default, { title: 'NYTBookShelf',
+	            subtitle: 'React / Redux / LocalStorage / Router3 / Sass / Mocha Chai',
+	            github: 'https://github.com/devinmarieb/NYTBookshelf',
+	            heroku: 'https://nytbookshelfprjct.herokuapp.com/#/',
+	            description: 'NYTBookshelf was a personal project I made about three quarters of the way through the front end engineering program at turing. It uses the NYT Bestseller list API to display seven categories for a user to browse. Books are displayed with the title, author, description and image if available. A user can save their favorite books and view them in a separate favorites tab as well as find the product to buy on Amazon.',
+	            imageOne: './images/nytbookshelf.png',
+	            imageTwo: './images/nytfavorites.png' }),
+	          _react2.default.createElement(_Projects2.default, { title: 'TripPlanner Database',
+	            subtitle: 'Node.js / Knex / PostgreSQL / Mocha Chai',
+	            github: 'https://github.com/devinmarieb/trip-planner',
+	            heroku: 'https://tripplannerprjct.herokuapp.com/',
+	            description: 'This was the first solo CRUD database I\'ve made. The idea behind this project was to make a simple database with dummy data that can be utilized in a future project. There are eighteen endpoints that cover GET, POST, PATCH and DELETE requests. Most importantly, this project taught me how to extensively test a database for both happy and sad paths. I made a quick front end for this project just so it was more pleasing to look at as a deployed app.',
+	            imageOne: './images/byob.png',
+	            imageTwo: './images/byobdata.png' })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return ProjectsCards;
+	}(_react.Component);
+
+	exports.default = ProjectsCards;
+
+/***/ }),
+/* 665 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(299);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Card = __webpack_require__(666);
+
+	var _FlatButton = __webpack_require__(697);
 
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 
@@ -41243,101 +41330,66 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Projects = function (_Component) {
-	  _inherits(Projects, _Component);
+	var Projects2 = function (_Component) {
+	  _inherits(Projects2, _Component);
 
-	  function Projects() {
-	    _classCallCheck(this, Projects);
+	  function Projects2() {
+	    _classCallCheck(this, Projects2);
 
-	    var _this = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this));
+	    var _this = _possibleConstructorReturn(this, (Projects2.__proto__ || Object.getPrototypeOf(Projects2)).call(this));
 
 	    _this.state = {};
 	    return _this;
 	  }
 
-	  _createClass(Projects, [{
+	  _createClass(Projects2, [{
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'section',
-	        { className: 'project-container' },
+	        null,
 	        _react2.default.createElement(
-	          _Card.Card,
-	          { className: 'project-card', style: { height: '900px' } },
-	          _react2.default.createElement(_Card.CardHeader, { title: 'Neumann', subtitle: 'React / Node.js / Router3 / Auth0 / Material-UI / Mocha Chai' }),
+	          'section',
+	          null,
 	          _react2.default.createElement(
-	            _Card.CardText,
-	            null,
-	            'Neumann is an app designed to help students at Turing find companies that alumni work at. An alumni can add a company to the app or add themselves to an existing company. They can also add reviews or hiring process information about the companies they\'ve been associated with. As Turing grows, it\'s important for students to be able to connect with alumni. Alumni can choose to give out their slack handle or email if they\'re willing to have students contact them.'
-	          ),
-	          _react2.default.createElement(
-	            _Card.CardActions,
-	            null,
-	            _react2.default.createElement(_FlatButton2.default, { label: 'GitHub Repo', style: { backgroundColor: '#939393', color: '#EBEBEB' }, href: 'https://github.com/ejwill04/neumann', target: 'blank' }),
-	            _react2.default.createElement(_FlatButton2.default, { label: 'Deployed on Heroku', style: { backgroundColor: '#939393', color: '#EBEBEB' }, href: 'https://neumann.herokuapp.com/', target: 'blank' })
-	          ),
-	          _react2.default.createElement(
-	            _Card.CardMedia,
-	            null,
-	            _react2.default.createElement('img', { className: 'project-image', src: '../../images/neumann-home.png' }),
-	            _react2.default.createElement('img', { className: 'project-image', src: '../../images/neumann-companypage.png' })
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _Card.Card,
-	          { className: 'project-card', style: { height: '900px' } },
-	          _react2.default.createElement(_Card.CardHeader, { title: 'NYT Bookshelf', subtitle: 'React / Redux / LocalStorage / Router3 / Sass / Mocha Chai' }),
-	          _react2.default.createElement(
-	            _Card.CardText,
-	            null,
-	            'NYT Bookshelf was a personal project I made about three quarters of the way through the front end engineering program at turing. It uses the NYT Bestseller list API to display seven categories for a user to browse. Books are displayed with the title, author, description and image if available. A user can save their favorite books and view them in a separate favorites tab as well as find the product to buy on Amazon.'
-	          ),
-	          _react2.default.createElement(
-	            _Card.CardActions,
-	            null,
-	            _react2.default.createElement(_FlatButton2.default, { label: 'GitHub Repo', style: { backgroundColor: '#939393', color: '#EBEBEB' }, href: 'https://github.com/devinmarieb/NYTBookshelf', target: 'blank' }),
-	            _react2.default.createElement(_FlatButton2.default, { label: 'Deployed on Heroku', style: { backgroundColor: '#939393', color: '#EBEBEB' }, href: 'https://nytbookshelfprjct.herokuapp.com/#/', target: 'blank' })
-	          ),
-	          _react2.default.createElement(
-	            _Card.CardMedia,
-	            null,
-	            _react2.default.createElement('img', { className: 'project-image', src: '../../images/nytbookshelf.png' }),
-	            _react2.default.createElement('img', { className: 'project-image', src: '../../images/nytfavorites.png' })
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _Card.Card,
-	          { className: 'project-card', style: { height: '900px' } },
-	          _react2.default.createElement(_Card.CardHeader, { title: 'TripPlanner Database', subtitle: 'Node.js / Knex / PostgreSQL / Mocha Chai' }),
-	          _react2.default.createElement(
-	            _Card.CardText,
-	            null,
-	            'This was the first solo CRUD database I\'ve made. The idea behind this project was to make a simple database with dummy data that can be utilized in a future project. There are eighteen endpoints that cover GET, POST, PATCH and DELETE requests. Most importantly, this project taught me how to extensively test a database for both happy and sad paths. I made a quick front end for this project just so it was more pleasing to look at as a deployed app.'
-	          ),
-	          _react2.default.createElement(
-	            _Card.CardActions,
-	            null,
-	            _react2.default.createElement(_FlatButton2.default, { label: 'GitHub Repo', style: { backgroundColor: '#939393', color: '#EBEBEB' }, href: 'https://github.com/devinmarieb/trip-planner', target: 'blank' }),
-	            _react2.default.createElement(_FlatButton2.default, { label: 'Deployed on Heroku', style: { backgroundColor: '#939393', color: '#EBEBEB' }, href: 'https://tripplannerprjct.herokuapp.com/', target: 'blank' })
-	          ),
-	          _react2.default.createElement(
-	            _Card.CardMedia,
-	            null,
-	            _react2.default.createElement('img', { className: 'project-image', src: '../../images/byob.png' }),
-	            _react2.default.createElement('img', { className: 'project-image', src: '../../images/byobdata.png' })
+	            'aside',
+	            { className: 'project' },
+	            _react2.default.createElement(
+	              'h2',
+	              null,
+	              this.props.title
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              this.props.subtitle
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              this.props.description
+	            ),
+	            _react2.default.createElement(
+	              _Card.CardActions,
+	              null,
+	              _react2.default.createElement(_FlatButton2.default, { label: 'GitHub Repo', style: { backgroundColor: '#939393', color: '#EBEBEB' }, href: this.props.github, target: 'blank' }),
+	              _react2.default.createElement(_FlatButton2.default, { label: 'Deployed on Heroku', style: { backgroundColor: '#939393', color: '#EBEBEB' }, href: this.props.heroku, target: 'blank' })
+	            ),
+	            _react2.default.createElement('img', { className: 'project-image', src: this.props.imageOne }),
+	            _react2.default.createElement('img', { className: 'project-image', src: this.props.imageTwo })
 	          )
 	        )
 	      );
 	    }
 	  }]);
 
-	  return Projects;
+	  return Projects2;
 	}(_react.Component);
 
-	exports.default = Projects;
+	exports.default = Projects2;
 
 /***/ }),
-/* 665 */
+/* 666 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41347,31 +41399,31 @@
 	});
 	exports.default = exports.CardExpandable = exports.CardActions = exports.CardText = exports.CardMedia = exports.CardTitle = exports.CardHeader = exports.Card = undefined;
 
-	var _Card2 = __webpack_require__(666);
+	var _Card2 = __webpack_require__(667);
 
 	var _Card3 = _interopRequireDefault(_Card2);
 
-	var _CardHeader2 = __webpack_require__(689);
+	var _CardHeader2 = __webpack_require__(690);
 
 	var _CardHeader3 = _interopRequireDefault(_CardHeader2);
 
-	var _CardTitle2 = __webpack_require__(692);
+	var _CardTitle2 = __webpack_require__(693);
 
 	var _CardTitle3 = _interopRequireDefault(_CardTitle2);
 
-	var _CardMedia2 = __webpack_require__(693);
+	var _CardMedia2 = __webpack_require__(694);
 
 	var _CardMedia3 = _interopRequireDefault(_CardMedia2);
 
-	var _CardText2 = __webpack_require__(694);
+	var _CardText2 = __webpack_require__(695);
 
 	var _CardText3 = _interopRequireDefault(_CardText2);
 
-	var _CardActions2 = __webpack_require__(695);
+	var _CardActions2 = __webpack_require__(696);
 
 	var _CardActions3 = _interopRequireDefault(_CardActions2);
 
-	var _CardExpandable2 = __webpack_require__(670);
+	var _CardExpandable2 = __webpack_require__(671);
 
 	var _CardExpandable3 = _interopRequireDefault(_CardExpandable2);
 
@@ -41387,7 +41439,7 @@
 	exports.default = _Card3.default;
 
 /***/ }),
-/* 666 */
+/* 667 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -41436,11 +41488,11 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _Paper = __webpack_require__(667);
+	var _Paper = __webpack_require__(668);
 
 	var _Paper2 = _interopRequireDefault(_Paper);
 
-	var _CardExpandable = __webpack_require__(670);
+	var _CardExpandable = __webpack_require__(671);
 
 	var _CardExpandable2 = _interopRequireDefault(_CardExpandable);
 
@@ -41611,7 +41663,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(301)))
 
 /***/ }),
-/* 667 */
+/* 668 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41621,7 +41673,7 @@
 	});
 	exports.default = undefined;
 
-	var _Paper = __webpack_require__(668);
+	var _Paper = __webpack_require__(669);
 
 	var _Paper2 = _interopRequireDefault(_Paper);
 
@@ -41630,7 +41682,7 @@
 	exports.default = _Paper2.default;
 
 /***/ }),
-/* 668 */
+/* 669 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -41679,7 +41731,7 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _propTypes3 = __webpack_require__(669);
+	var _propTypes3 = __webpack_require__(670);
 
 	var _propTypes4 = _interopRequireDefault(_propTypes3);
 
@@ -41787,7 +41839,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(301)))
 
 /***/ }),
-/* 669 */
+/* 670 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41827,7 +41879,7 @@
 	};
 
 /***/ }),
-/* 670 */
+/* 671 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -41868,15 +41920,15 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _keyboardArrowUp = __webpack_require__(671);
+	var _keyboardArrowUp = __webpack_require__(672);
 
 	var _keyboardArrowUp2 = _interopRequireDefault(_keyboardArrowUp);
 
-	var _keyboardArrowDown = __webpack_require__(683);
+	var _keyboardArrowDown = __webpack_require__(684);
 
 	var _keyboardArrowDown2 = _interopRequireDefault(_keyboardArrowDown);
 
-	var _IconButton = __webpack_require__(684);
+	var _IconButton = __webpack_require__(685);
 
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 
@@ -41938,7 +41990,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(301)))
 
 /***/ }),
-/* 671 */
+/* 672 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41951,11 +42003,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(672);
+	var _pure = __webpack_require__(673);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _SvgIcon = __webpack_require__(681);
+	var _SvgIcon = __webpack_require__(682);
 
 	var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -41975,14 +42027,14 @@
 	exports.default = HardwareKeyboardArrowUp;
 
 /***/ }),
-/* 672 */
+/* 673 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _shouldUpdate = __webpack_require__(673);
+	var _shouldUpdate = __webpack_require__(674);
 
 	var _shouldUpdate2 = _interopRequireDefault(_shouldUpdate);
 
@@ -41990,7 +42042,7 @@
 
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
-	var _createHelper = __webpack_require__(674);
+	var _createHelper = __webpack_require__(675);
 
 	var _createHelper2 = _interopRequireDefault(_createHelper);
 
@@ -42003,7 +42055,7 @@
 	exports.default = (0, _createHelper2.default)(pure, 'pure', true, true);
 
 /***/ }),
-/* 673 */
+/* 674 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42012,11 +42064,11 @@
 
 	var _react = __webpack_require__(299);
 
-	var _createHelper = __webpack_require__(674);
+	var _createHelper = __webpack_require__(675);
 
 	var _createHelper2 = _interopRequireDefault(_createHelper);
 
-	var _createEagerFactory = __webpack_require__(677);
+	var _createEagerFactory = __webpack_require__(678);
 
 	var _createEagerFactory2 = _interopRequireDefault(_createEagerFactory);
 
@@ -42056,14 +42108,14 @@
 	exports.default = (0, _createHelper2.default)(shouldUpdate, 'shouldUpdate');
 
 /***/ }),
-/* 674 */
+/* 675 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 
 	exports.__esModule = true;
 
-	var _wrapDisplayName = __webpack_require__(675);
+	var _wrapDisplayName = __webpack_require__(676);
 
 	var _wrapDisplayName2 = _interopRequireDefault(_wrapDisplayName);
 
@@ -42102,14 +42154,14 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(301)))
 
 /***/ }),
-/* 675 */
+/* 676 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _getDisplayName = __webpack_require__(676);
+	var _getDisplayName = __webpack_require__(677);
 
 	var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
 
@@ -42122,7 +42174,7 @@
 	exports.default = wrapDisplayName;
 
 /***/ }),
-/* 676 */
+/* 677 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -42143,18 +42195,18 @@
 	exports.default = getDisplayName;
 
 /***/ }),
-/* 677 */
+/* 678 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _createEagerElementUtil = __webpack_require__(678);
+	var _createEagerElementUtil = __webpack_require__(679);
 
 	var _createEagerElementUtil2 = _interopRequireDefault(_createEagerElementUtil);
 
-	var _isReferentiallyTransparentFunctionComponent = __webpack_require__(679);
+	var _isReferentiallyTransparentFunctionComponent = __webpack_require__(680);
 
 	var _isReferentiallyTransparentFunctionComponent2 = _interopRequireDefault(_isReferentiallyTransparentFunctionComponent);
 
@@ -42170,7 +42222,7 @@
 	exports.default = createFactory;
 
 /***/ }),
-/* 678 */
+/* 679 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42209,14 +42261,14 @@
 	exports.default = createEagerElementUtil;
 
 /***/ }),
-/* 679 */
+/* 680 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 
 	exports.__esModule = true;
 
-	var _isClassComponent = __webpack_require__(680);
+	var _isClassComponent = __webpack_require__(681);
 
 	var _isClassComponent2 = _interopRequireDefault(_isClassComponent);
 
@@ -42230,7 +42282,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(301)))
 
 /***/ }),
-/* 680 */
+/* 681 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -42243,7 +42295,7 @@
 	exports.default = isClassComponent;
 
 /***/ }),
-/* 681 */
+/* 682 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42253,7 +42305,7 @@
 	});
 	exports.default = undefined;
 
-	var _SvgIcon = __webpack_require__(682);
+	var _SvgIcon = __webpack_require__(683);
 
 	var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -42262,7 +42314,7 @@
 	exports.default = _SvgIcon2.default;
 
 /***/ }),
-/* 682 */
+/* 683 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -42433,7 +42485,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(301)))
 
 /***/ }),
-/* 683 */
+/* 684 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42446,11 +42498,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(672);
+	var _pure = __webpack_require__(673);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _SvgIcon = __webpack_require__(681);
+	var _SvgIcon = __webpack_require__(682);
 
 	var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -42470,7 +42522,7 @@
 	exports.default = HardwareKeyboardArrowDown;
 
 /***/ }),
-/* 684 */
+/* 685 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42480,7 +42532,7 @@
 	});
 	exports.default = undefined;
 
-	var _IconButton = __webpack_require__(685);
+	var _IconButton = __webpack_require__(686);
 
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 
@@ -42489,7 +42541,7 @@
 	exports.default = _IconButton2.default;
 
 /***/ }),
-/* 685 */
+/* 686 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -42542,7 +42594,7 @@
 
 	var _transitions2 = _interopRequireDefault(_transitions);
 
-	var _propTypes3 = __webpack_require__(669);
+	var _propTypes3 = __webpack_require__(670);
 
 	var _propTypes4 = _interopRequireDefault(_propTypes3);
 
@@ -42550,11 +42602,11 @@
 
 	var _EnhancedButton2 = _interopRequireDefault(_EnhancedButton);
 
-	var _FontIcon = __webpack_require__(686);
+	var _FontIcon = __webpack_require__(687);
 
 	var _FontIcon2 = _interopRequireDefault(_FontIcon);
 
-	var _Tooltip = __webpack_require__(688);
+	var _Tooltip = __webpack_require__(689);
 
 	var _Tooltip2 = _interopRequireDefault(_Tooltip);
 
@@ -42879,7 +42931,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(301)))
 
 /***/ }),
-/* 686 */
+/* 687 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42889,7 +42941,7 @@
 	});
 	exports.default = undefined;
 
-	var _FontIcon = __webpack_require__(687);
+	var _FontIcon = __webpack_require__(688);
 
 	var _FontIcon2 = _interopRequireDefault(_FontIcon);
 
@@ -42898,7 +42950,7 @@
 	exports.default = _FontIcon2.default;
 
 /***/ }),
-/* 687 */
+/* 688 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -43062,7 +43114,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(301)))
 
 /***/ }),
-/* 688 */
+/* 689 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -43296,7 +43348,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(301)))
 
 /***/ }),
-/* 689 */
+/* 690 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -43345,7 +43397,7 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _Avatar = __webpack_require__(690);
+	var _Avatar = __webpack_require__(691);
 
 	var _Avatar2 = _interopRequireDefault(_Avatar);
 
@@ -43527,7 +43579,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(301)))
 
 /***/ }),
-/* 690 */
+/* 691 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43537,7 +43589,7 @@
 	});
 	exports.default = undefined;
 
-	var _Avatar = __webpack_require__(691);
+	var _Avatar = __webpack_require__(692);
 
 	var _Avatar2 = _interopRequireDefault(_Avatar);
 
@@ -43546,7 +43598,7 @@
 	exports.default = _Avatar2.default;
 
 /***/ }),
-/* 691 */
+/* 692 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -43722,7 +43774,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(301)))
 
 /***/ }),
-/* 692 */
+/* 693 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -43901,7 +43953,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(301)))
 
 /***/ }),
-/* 693 */
+/* 694 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -44116,7 +44168,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(301)))
 
 /***/ }),
-/* 694 */
+/* 695 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -44243,7 +44295,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(301)))
 
 /***/ }),
-/* 695 */
+/* 696 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -44375,7 +44427,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(301)))
 
 /***/ }),
-/* 696 */
+/* 697 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44385,7 +44437,7 @@
 	});
 	exports.default = undefined;
 
-	var _FlatButton = __webpack_require__(697);
+	var _FlatButton = __webpack_require__(698);
 
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 
@@ -44394,7 +44446,7 @@
 	exports.default = _FlatButton2.default;
 
 /***/ }),
-/* 697 */
+/* 698 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -44455,7 +44507,7 @@
 
 	var _EnhancedButton2 = _interopRequireDefault(_EnhancedButton);
 
-	var _FlatButtonLabel = __webpack_require__(698);
+	var _FlatButtonLabel = __webpack_require__(699);
 
 	var _FlatButtonLabel2 = _interopRequireDefault(_FlatButtonLabel);
 
@@ -44757,7 +44809,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(301)))
 
 /***/ }),
-/* 698 */
+/* 699 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -44853,159 +44905,6 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(301)))
 
 /***/ }),
-/* 699 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(299);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Skills = function (_Component) {
-	  _inherits(Skills, _Component);
-
-	  function Skills() {
-	    _classCallCheck(this, Skills);
-
-	    var _this = _possibleConstructorReturn(this, (Skills.__proto__ || Object.getPrototypeOf(Skills)).call(this));
-
-	    _this.state = {};
-	    return _this;
-	  }
-
-	  _createClass(Skills, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'section',
-	        null,
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'skillset' },
-	          _react2.default.createElement(
-	            'p',
-	            { className: 'skills-intro' },
-	            'Turing students invest over 1500 hours across seven months in becoming job-ready software developers. In the Front-End Engineering program we begin by building skills in HTML, CSS, and Design Fundamentals. We continue by laying a solid foundation in core JavaScript, then progress into React. In the final quarter students build backend applications with Node and SQL. In total, FEE graduates have the skills to turn design comps into working applications.'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'aside',
-	          { className: 'technology-container' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'frontend' },
-	            _react2.default.createElement(
-	              'h2',
-	              { className: 'favs' },
-	              'frontend favs:'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'React, Redux, Sass, Material-UI, Webpack'
-	            ),
-	            _react2.default.createElement('br', null),
-	            _react2.default.createElement(
-	              'h3',
-	              { className: 'other-tech' },
-	              'Other frontend technologies I\'ve used:'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'jQuery'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Ember'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Marko'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'HTML5 Canvas'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'CSS3'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'backend' },
-	            _react2.default.createElement(
-	              'h2',
-	              { className: 'favs' },
-	              'backend favs:'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'NodeJS, Knex, PostgreSQL'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'testing' },
-	            _react2.default.createElement(
-	              'h2',
-	              { className: 'favs' },
-	              'testing favs:'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Mocha, Chai, Enzyme'
-	            ),
-	            _react2.default.createElement('br', null),
-	            _react2.default.createElement(
-	              'h3',
-	              { className: 'other-tech' },
-	              'Other testing technologies I\'ve used:'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Selenium'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Jest'
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Skills;
-	}(_react.Component);
-
-	exports.default = Skills;
-
-/***/ }),
 /* 700 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -45048,17 +44947,50 @@
 	        'section',
 	        null,
 	        _react2.default.createElement(
-	          'aside',
-	          { className: 'user-photo-container' },
-	          _react2.default.createElement('img', { className: 'user-photo', src: '../../images/user-photo.jpg' }),
-	          _react2.default.createElement('img', { className: 'user-photo', src: '../../images/user-photo.jpg' }),
-	          _react2.default.createElement('img', { className: 'user-photo', src: '../../images/user-photo.jpg' }),
-	          _react2.default.createElement('img', { className: 'user-photo', src: '../../images/user-photo.jpg' })
+	          'div',
+	          { className: 'about-me-text' },
+	          'I grew up in Portland, Maine, got my bachelor\'s degree from Champlain College in Burlington, Vermont and moved to Boston shortly after. I spent years in Boston working with technology and eventually decided I wanted to write software. I moved to Denver and enrolled in the Front End Engineering program at the Turing School of Software & Design. I want to continue writing JavaScript while learning new things, whether it be more front end frameworks and libraries or back end technologies.',
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
+	          'My personal interests include travel, photography, writing, knitting and good IPAs. I\'m very interested in the travel, education and advertising industries. While I was getting my bachelor\'s degree, I took a few advertising and marketing classes and I find the industry fascinating. Throughout my time in college and in Boston I had some amazing opportunities to travel and hope to continue to do so in the future. My dream job would be writing software for a company that deals with the travel or tourism industry.'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'about-me-text' },
-	          'Text'
+	          { className: 'skillset' },
+	          _react2.default.createElement(
+	            'aside',
+	            { className: 'skill' },
+	            _react2.default.createElement(
+	              'h3',
+	              null,
+	              'Front End Skills:'
+	            ),
+	            'JavaScript, jQuery, React, Redux, Ember, CSS3, Sass, Material-UI, HTML5, Webpack',
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement('br', null)
+	          ),
+	          _react2.default.createElement(
+	            'aside',
+	            { className: 'skill' },
+	            _react2.default.createElement(
+	              'h3',
+	              null,
+	              'Back End Skills:'
+	            ),
+	            'Node, Knex, PostgreSQL',
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement('br', null)
+	          ),
+	          _react2.default.createElement(
+	            'aside',
+	            { className: 'skill' },
+	            _react2.default.createElement(
+	              'h3',
+	              null,
+	              'Testing Skills:'
+	            ),
+	            'Mocha, Chai, Enzyme, Selenium, Jasmine'
+	          )
 	        )
 	      );
 	    }
@@ -45104,7 +45036,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: #EBEBEB; }\n\n.title-container {\n  display: flex;\n  justify-content: space-between;\n  background-color: #23282D;\n  color: #EBEBEB; }\n\n.name {\n  display: inline-block;\n  margin: 15px;\n  font-family: 'PT Sans Narrow', sans-serif;\n  font-size: 36px; }\n\n.social {\n  display: inline-block;\n  margin: 15px;\n  width: 50px; }\n\nimg {\n  cursor: pointer; }\n\n.project-container {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around; }\n\n.project-card {\n  margin-top: 15px;\n  width: 45%; }\n\n.project-image {\n  margin-top: 5px;\n  height: 300px; }\n\n.technology-container {\n  display: flex;\n  justify-content: space-around; }\n\n.skillset {\n  border-bottom: 1px solid black; }\n\n.skills-intro {\n  margin: 0 auto;\n  padding: 15px 0;\n  width: 85%;\n  text-align: center; }\n\n.favs {\n  font-size: 24px; }\n\n.other-tech {\n  font-size: 18px; }\n\n.user-photo-container {\n  text-align: center; }\n\n.user-photo {\n  margin: 15px;\n  width: 250px;\n  border-radius: 20px; }\n\n.about-me-text {\n  margin-top: 50px;\n  text-align: center; }\n", ""]);
+	exports.push([module.id, "body {\n  background-color: #FFFFFF; }\n\n.title-container {\n  display: flex;\n  justify-content: space-between;\n  background-color: #0B132B;\n  color: #FFFFFF; }\n\n.name {\n  display: inline-block;\n  margin: 15px;\n  font-family: 'PT Sans Narrow', sans-serif;\n  font-size: 36px; }\n\n.social {\n  display: inline-block;\n  margin: 15px;\n  width: 50px; }\n\nimg {\n  cursor: pointer; }\n\n.project-container {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between; }\n\n.project {\n  margin-top: 25px;\n  padding: 10px;\n  text-align: center;\n  border: 3px solid #0B132B;\n  border-radius: 2%;\n  width: 45vw; }\n\n.project-image {\n  margin-top: 5px;\n  width: 95%; }\n\n.technology-container {\n  display: flex;\n  justify-content: space-around; }\n\n.skills-intro {\n  margin: 15px auto;\n  padding: 15px 0;\n  width: 85%;\n  text-align: center;\n  line-height: 150%;\n  font-size: 18px; }\n\n.about-me-text {\n  float: left;\n  margin: 15px auto;\n  width: 60%;\n  border-right: 1px solid #0B132B;\n  padding: 30px;\n  text-align: center;\n  line-height: 150%;\n  font-size: 18px; }\n\n.skillset {\n  float: right;\n  margin-right: 30px;\n  width: 30%;\n  text-align: center;\n  font-size: 18px; }\n\nh3 {\n  margin-top: 26px; }\n\n@media screen and (max-width: 915px) {\n  .project-container {\n    justify-content: center; }\n  .project {\n    width: 80vw; }\n  .about-me-text {\n    width: 95%;\n    border-right: none;\n    border-bottom: 1px solid black; }\n  .skillset {\n    width: 95%;\n    margin-bottom: 30px; } }\n\n@media screen and (max-width: 600px) {\n  .skillset {\n    margin: 15px auto;\n    display: block; }\n  .skill {\n    margin: 15px auto; }\n  .title-container {\n    display: block;\n    text-align: center; }\n  .name {\n    font-size: 22px; }\n  .social {\n    width: 40px; } }\n", ""]);
 
 	// exports
 
