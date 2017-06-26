@@ -41271,6 +41271,7 @@
 	          _react2.default.createElement(_Projects2.default, {
 	            title: 'Neumann',
 	            subtitle: 'React / Node.js / Router3 / Auth0 / Material-UI / Mocha Chai',
+	            hosted: 'Deployed on Heroku',
 	            github: 'https://github.com/ejwill04/neumann',
 	            heroku: 'https://neumann.herokuapp.com/',
 	            description: 'Neumann is an app designed to help students at Turing find companies that alumni work at. An alumni can add a company to the app or add themselves to an existing company. They can also add reviews or hiring process information about the companies they\'ve been associated with. As Turing grows, it\'s important for students to be able to connect with alumni. Alumni can choose to give out their slack handle or email if they\'re willing to have students contact them.',
@@ -41278,6 +41279,7 @@
 	            imageTwo: './images/neumann-companypage.png' }),
 	          _react2.default.createElement(_Projects2.default, { title: 'NYTBookShelf',
 	            subtitle: 'React / Redux / LocalStorage / Router3 / Sass / Mocha Chai',
+	            hosted: 'Deployed on Heroku',
 	            github: 'https://github.com/devinmarieb/NYTBookshelf',
 	            heroku: 'https://nytbookshelfprjct.herokuapp.com/#/',
 	            description: 'NYTBookshelf was a personal project I made about three quarters of the way through the front end engineering program at turing. It uses the NYT Bestseller list API to display seven categories for a user to browse. Books are displayed with the title, author, description and image if available. A user can save their favorite books and view them in a separate favorites tab as well as find the product to buy on Amazon.',
@@ -41285,11 +41287,19 @@
 	            imageTwo: './images/nytfavorites.png' }),
 	          _react2.default.createElement(_Projects2.default, { title: 'TripPlanner Database',
 	            subtitle: 'Node.js / Knex / PostgreSQL / Mocha Chai',
+	            hosted: 'Deployed on Heroku',
 	            github: 'https://github.com/devinmarieb/trip-planner',
 	            heroku: 'https://tripplannerprjct.herokuapp.com/',
 	            description: 'This was the first solo CRUD database I\'ve made. The idea behind this project was to make a simple database with dummy data that can be utilized in a future project. There are eighteen endpoints that cover GET, POST, PATCH and DELETE requests. Most importantly, this project taught me how to extensively test a database for both happy and sad paths. I made a quick front end for this project just so it was more pleasing to look at as a deployed app.',
 	            imageOne: './images/byob.png',
-	            imageTwo: './images/byobdata.png' })
+	            imageTwo: './images/byobdata.png' }),
+	          _react2.default.createElement(_Projects2.default, { title: 'Codewars',
+	            subtitle: 'JavaScript',
+	            hosted: 'Codewars Profile',
+	            github: 'https://github.com/devinmarieb/codewars',
+	            heroku: 'https://www.codewars.com/users/devinmarieb',
+	            description: 'I set up a fun repo with solutions to my Codewars problems. I use the site to continuously imporove on JavaScript fudamentals.',
+	            imageOne: './images/codewars.png' })
 	        )
 	      );
 	    }
@@ -41330,19 +41340,19 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Projects2 = function (_Component) {
-	  _inherits(Projects2, _Component);
+	var Projects = function (_Component) {
+	  _inherits(Projects, _Component);
 
-	  function Projects2() {
-	    _classCallCheck(this, Projects2);
+	  function Projects() {
+	    _classCallCheck(this, Projects);
 
-	    var _this = _possibleConstructorReturn(this, (Projects2.__proto__ || Object.getPrototypeOf(Projects2)).call(this));
+	    var _this = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this));
 
 	    _this.state = {};
 	    return _this;
 	  }
 
-	  _createClass(Projects2, [{
+	  _createClass(Projects, [{
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -41373,7 +41383,7 @@
 	              _Card.CardActions,
 	              null,
 	              _react2.default.createElement(_FlatButton2.default, { label: 'GitHub Repo', style: { backgroundColor: '#939393', color: '#EBEBEB' }, href: this.props.github, target: 'blank' }),
-	              _react2.default.createElement(_FlatButton2.default, { label: 'Deployed on Heroku', style: { backgroundColor: '#939393', color: '#EBEBEB' }, href: this.props.heroku, target: 'blank' })
+	              _react2.default.createElement(_FlatButton2.default, { label: this.props.hosted, style: { backgroundColor: '#939393', color: '#EBEBEB' }, href: this.props.heroku, target: 'blank' })
 	            ),
 	            _react2.default.createElement('img', { className: 'project-image', src: this.props.imageOne }),
 	            _react2.default.createElement('img', { className: 'project-image', src: this.props.imageTwo })
@@ -41383,10 +41393,10 @@
 	    }
 	  }]);
 
-	  return Projects2;
+	  return Projects;
 	}(_react.Component);
 
-	exports.default = Projects2;
+	exports.default = Projects;
 
 /***/ }),
 /* 666 */
