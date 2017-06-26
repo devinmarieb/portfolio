@@ -41277,7 +41277,7 @@
 	            description: 'Neumann is an app designed to help students at Turing find companies that alumni work at. An alumni can add a company to the app or add themselves to an existing company. They can also add reviews or hiring process information about the companies they\'ve been associated with. As Turing grows, it\'s important for students to be able to connect with alumni. Alumni can choose to give out their slack handle or email if they\'re willing to have students contact them.',
 	            imageOne: './images/neumann-home.png',
 	            imageTwo: './images/neumann-companypage.png' }),
-	          _react2.default.createElement(_Projects2.default, { title: 'NYTBookShelf',
+	          _react2.default.createElement(_Projects2.default, { title: 'NYTBookshelf',
 	            subtitle: 'React / Redux / LocalStorage / Router3 / Sass / Mocha Chai',
 	            hosted: 'Deployed on Heroku',
 	            github: 'https://github.com/devinmarieb/NYTBookshelf',
