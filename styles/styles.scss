@@ -1,12 +1,14 @@
+@import 'variables';
+
 body {
-  background-color: #FFFFFF;
+  background-color: $lightColor;
 }
 
 .title-container {
   display: flex;
   justify-content: space-between;
-  background-color: #0B132B;
-  color: #FFFFFF;
+  background-color: $darkColor;
+  color: $lightColor;
 }
 
 .name {
@@ -37,9 +39,9 @@ img {
   margin: 10px;
   padding: 10px;
   text-align: center;
-  -moz-box-shadow: 0 0 5px #0B132B;
-  -webkit-box-shadow: 0 0 5px #0B132B;
-  box-shadow: 0 0 5px #0B132B;
+  -moz-box-shadow: 0 0 5px $darkColor;
+  -webkit-box-shadow: 0 0 5px $darkColor;
+  box-shadow: 0 0 5px $darkColor;
   border-radius: 2%;
   width: 43vw;
 }
@@ -67,7 +69,7 @@ img {
   float: left;
   margin: 0 auto 15px;
   width: 60%;
-  border-right: 1px solid #0B132B;
+  border-right: 1px solid $darkColor;
   padding: 30px;
   text-align: center;
   line-height: 150%;
@@ -86,46 +88,4 @@ h3 {
   margin-top: 26px;
 }
 
-@media screen and (max-width: 920px) {
-  .project-container {
-    justify-content: center;
-  }
-  .project {
-    width: 80vw;
-  }
-
-  .about-me-text {
-    width: 90%;
-    border-right: none;
-    border-bottom: 1px solid black;
-  }
-
-  .skillset {
-    width: 95%;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .skillset {
-    margin: 15px auto;
-    display: block;
-  }
-
-  .skill {
-    margin: 15px auto;
-  }
-
-  .title-container {
-    display: block;
-    text-align: center;
-  }
-
-  .name {
-    font-size: 22px;
-  }
-
-  .social {
-    width: 40px;
-  }
-}
+@import 'mediaQueries';
