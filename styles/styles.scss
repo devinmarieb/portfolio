@@ -36,7 +36,9 @@ img {
   margin-top: 25px;
   padding: 10px;
   text-align: center;
-  border: 3px solid #0B132B;
+  -moz-box-shadow: 0 0 5px #0B132B;
+  -webkit-box-shadow: 0 0 5px #0B132B;
+  box-shadow: 0 0 5px #0B132B;
   border-radius: 2%;
   width: 45vw;
 }
