@@ -41298,7 +41298,7 @@
 	            hosted: 'Codewars Profile',
 	            github: 'https://github.com/devinmarieb/codewars',
 	            heroku: 'https://www.codewars.com/users/devinmarieb',
-	            description: 'I set up a fun repo with solutions to my Codewars problems. I use the site to continuously improve on JavaScript fudamentals.',
+	            description: 'I set up a fun repo with solutions to my Codewars problems. I use the site to continuously improve on JavaScript fundamentals.',
 	            imageOne: './images/codewars.png' })
 	        )
 	      );
